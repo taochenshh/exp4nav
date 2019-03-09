@@ -1,0 +1,26 @@
+name: exp4nav
+channels:
+  - conda-forge
+  - pytorch
+  - anaconda
+dependencies:
+  - python=3.6
+  - numpy=1.15.4
+  - six=1.11.0
+  - scipy=1.1.0
+  - pandas=0.23.4
+  - tqdm=4.28.1
+  - pytorch=0.4.1
+  - cuda90
+  - torchvision=0.2.1
+  - cloudpickle=0.6.1
+  - opencv=3.4
+  - scikit-image=0.14.1
+  - matplotlib==3.0.1
+  - pip:
+    - tensorboardX==1.6
+    - gym==0.10.8
+    - mpi4py==3.0.0
+    - tensorflow==1.12
+    - scikit_fmm==0.0.9
+    - pyassimp==4.1.3
