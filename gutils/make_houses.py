@@ -13,6 +13,8 @@ import subprocess
 
 parser = argparse.ArgumentParser(
     description='Create obj+mtl files for the houses in the dataset.')
+parser.add_argument('-hf_name', help='house file name, this script will '
+                    'convert hf_name.json to hf_name.obj', default='house')
 parser.add_argument('-eqa_path', help='/path/to/eqa.json', required=True)
 parser.add_argument(
     '-suncg_toolbox_path', help='/path/to/SUNCGtoolbox', required=True)
@@ -33,8 +35,9 @@ start_dir = os.getcwd()
 def extract_threaded(house):
     os.chdir(os.path.join(args.suncg_data_path, 'house', house))
     subprocess.call(
-        shlex.split('%s house.json house.obj' % (os.path.join(
-            args.suncg_toolbox_path, 'gaps', 'bin', 'x86_64', 'scn2scn'),)))
+        shlex.split('%s %s.json %s.obj' % (os.path.join(
+            args.suncg_toolbox_path, 'gaps', 'bin', 'x86_64', 'scn2scn'), 
+            args.hf_name, args.hf_name)))
     print('extracted', house)
 
 

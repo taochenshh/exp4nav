@@ -14,9 +14,9 @@ build/*
 src/deps/*
 *autoenv*
 *.bin
+*.json
 !utils/*/config.json
 !src/configs/*.json
-*.json
 !House3D/renderer/*.sh
 random_scripts/*
 *.mtl
@@ -189,6 +189,4 @@ typings/
 .env
 
 .idea/
-random_scripts/
-training/models/
-
+pretrain/
