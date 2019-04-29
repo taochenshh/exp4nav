@@ -51,7 +51,7 @@ def key_control(mat, cam):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--data_file',
-                        default='../path_data/eqa_humans.json',
+                        default='../path_data/cleaned_human_demo_data.json',
                         type=str)
     parser.add_argument('--suncg_house_dir',
                         default='../../suncg_data/house',

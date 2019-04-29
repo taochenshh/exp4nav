@@ -36,7 +36,7 @@ def get_mat(env, text_height, text):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--data_file',
-                        default='../path_data/eqa_humans.json',
+                        default='../path_data/cleaned_human_demo_data.json',
                         type=str)
     parser.add_argument('--demo_id', default=0, type=int)
     parser.add_argument('--width', type=int, default=600)

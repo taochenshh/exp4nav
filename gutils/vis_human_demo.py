@@ -62,7 +62,7 @@ def save_demo_map(env, locs, demo_id, save_folder):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--data_file',
-                        default='../path_data/eqa_humans.json',
+                        default='../path_data/cleaned_human_demo_data.json',
                         type=str)
     parser.add_argument('--demo_id',
                         default=0,
